@@ -63,7 +63,7 @@ namespace hoatest
                 Process process = Process.Start(startInfo);
                 StreamReader sr = process.StandardOutput;
                 this.textBox3.Text = "";
-                MessageBox.Show(sr.ReadToEnd());
+                //MessageBox.Show(sr.ReadToEnd());
                 this.textBox3.AppendText(sr.ReadToEnd());
             }
             catch (Exception ex)
@@ -72,5 +72,7 @@ namespace hoatest
                 this.textBox3.AppendText(ex.Message);
             }
         }
+
+
     }
 }
